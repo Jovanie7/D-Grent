@@ -707,6 +707,16 @@ function initProcessAnimation() {
     });
 }
 
+const steps = document.querySelectorAll('.process-step');
+
+let index = 0;
+setInterval(() => {
+  steps.forEach(step => step.classList.remove('active'));
+  steps[index].classList.add('active');
+  index = (index + 1) % steps.length;
+}, 1500);
+
+
 function playProcessAnimation(steps) {
     resetProcessAnimation(steps);
     
@@ -915,14 +925,19 @@ function calculateCarbonFootprint() {
 
 // Tambahkan efek glitch pada judul hero
 function addGlitchEffect() {
-    const heroTitle = document.querySelector('.hero-title');
+    const heroTitle = document.querySelector('.hero-title .glitch'); // LEBIH SPESIFIK
     if (heroTitle) {
-        setInterval(() => {
-            heroTitle.classList.add('glitch-active');
-            setTimeout(() => {
-                heroTitle.classList.remove('glitch-active');
-            }, 200);
-        }, 5000);
+        // Hapus interval otomatis, gunakan CSS animation saja
+        console.log('Glitch effect initialized on hero logo');
+        
+        // Optional: Trigger glitch on hover atau event tertentu
+        heroTitle.addEventListener('mouseenter', function() {
+            this.style.animation = 'glitch-flicker 0.5s ease';
+        });
+        
+        heroTitle.addEventListener('animationend', function() {
+            this.style.animation = '';
+        });
     }
 }
 

@@ -12,32 +12,36 @@
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loading-content">
-            <h1>D'GRENT</h1>
-            <p>Digital + Green + Internet</p>
+            <h1><img src="logo campaign.png" alt=""></h1>
+            <p>Disconnect you from the world...</p>
             <div class="loading-bar">
                 <div class="loading-progress"></div>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">D'GRENT</h1>
-            <p class="hero-subtitle">Digital + Green + Internet</p>
-            <p class="hero-description">Ketika dunia terputus, bumi kembali bernapas. <br><span class="highlight">Disconnect to Reconnect.</span></p>
-            <button id="explore-btn" class="cta-button">Jelajahi Kampanye</button>
+ <!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-title">
+            <div class="glitch-container"> <!-- TAMBAH INI -->
+                <img src="logo campaign.png" alt="Campaign Logo">
+            </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll untuk melanjutkan</span>
-            <div class="arrow"></div>
-        </div>
-    </section>
+        <p class="hero-subtitle">Digital + Green + Internet</p>
+        <p class="hero-description">Virus ini bukan menghancurkan, tapi menghidupkan kembali bumi <br><span class="highlight">Disconnect to Reconnect.</span></p>
+        <button id="explore-btn" class="cta-button">Jelajahi Kampanye</button>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll untuk melanjutkan</span>
+        <div class="arrow"></div>
+    </div>
+</section>
 
     <!-- Navigation -->
     <nav id="main-nav">
         <div class="nav-container">
-            <div class="nav-logo">D'GRENT</div>
+            <div class="nav-logo"><a href="#hero"><img src="logo campaign.png" alt=""></a></div>
             <ul class="nav-menu">
                 <li><a href="#visi">Visi</a></li>
                 <li><a href="#polusi">Polusi Digital</a></li>
@@ -55,7 +59,7 @@
     <!-- Visi Kampanye Section -->
     <section id="visi" class="section">
         <div class="container">
-            <h2 class="section-title">Visi Kampanye</h2>
+            <h2 class="section-title glitch-text" data-text="VISI KAMPANYE">Visi Kampanye</h2>
             <div class="visi-content">
                 <div class="visi-text">
                     <p><b>Kampanye ini berangkat dari meningkatnya aktivitas digital sehari-hari, khususnya di media sosial, yang sering kali dilakukan tanpa disadari dampak lingkungannya. </b>  Setiap unggahan, pencarian, streaming, penyimpanan data di cloud, hingga penggunaan layanan berbasis server jarak jauh membutuhkan energi yang besar, dan secara tidak langsung turut menyumbang jejak karbon digital. Ironisnya, sebagian besar konten yang dibagikan bersifat impulsif, berulang, atau kurang bermakna, hanya untuk mengejar validasi instan dan tren sesaat. <br><br>
@@ -63,15 +67,18 @@
                     </p>
                 </div>
                 <div class="visi-visual">
-                    <div class="earth-container">
-                        <div class="earth"></div>
-                        <div class="data-streams">
-                            <div class="stream"></div>
-                            <div class="stream"></div>
-                            <div class="stream"></div>
-                        </div>
-                    </div>
-                </div>
+    <div class="earth-container">
+        <div class="earth">
+            <img src="earth.png" alt="">
+        </div>
+        <div class="data-streams">
+            <div class="stream"></div>
+            <div class="stream"></div>
+            <div class="stream"></div>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
     </section>
@@ -80,12 +87,14 @@
 
 <section id="polusi" class="section">
     <div class="container">
-        <h2 class="section-title glitch" data-text="Polusi Digital">Bagaimana Polusi Digital Terjadi?</h2>
+        <h2 class="section-title glitch" data-text="Bagaimana Polusi Digital Terjadi?">Bagaimana Polusi Digital Terjadi?</h2>
         
       <!-- Animasi Proses Digital ke Emisi -->
 <div class="process-animation">
     <div class="process-container">
-        <div class="process-step">
+
+        <!-- STEP 1 -->
+        <div class="process-step active">
             <div class="step-visual">
                 <div class="phone-user">
                     <div class="person">
@@ -96,16 +105,17 @@
                     </div>
                     <div class="phone">📱</div>
                     <div class="social-icons">
-                        <div class="social-icon">📸</div>
-                        <div class="social-icon">🎵</div>
-                        <div class="social-icon">📹</div>
+                        <span>📸</span>
+                        <span>🎵</span>
+                        <span>📹</span>
                     </div>
                 </div>
             </div>
             <div class="step-label">Kegiatan Digital Sehari-hari</div>
             <div class="step-arrow">➡️</div>
         </div>
-        
+
+        <!-- STEP 2 -->
         <div class="process-step">
             <div class="step-visual">
                 <div class="wifi-transmission">
@@ -114,15 +124,18 @@
                         <div class="wave"></div>
                         <div class="wave"></div>
                     </div>
-                    <div class="data-packet">📧</div>
-                    <div class="data-packet">🎬</div>
-                    <div class="data-packet">📁</div>
+                    <div class="data-icons">
+                        <span>📧</span>
+                        <span>🎬</span>
+                        <span>📁</span>
+                    </div>
                 </div>
             </div>
             <div class="step-label">Data Dikirim via Internet</div>
             <div class="step-arrow">➡️</div>
         </div>
-        
+
+        <!-- STEP 3 -->
         <div class="process-step">
             <div class="step-visual">
                 <div class="data-center">
@@ -133,51 +146,46 @@
                     </div>
                     <div class="cooling-fan">💨</div>
                     <div class="data-flow">
-                        <div class="data-bit">0</div>
-                        <div class="data-bit">1</div>
-                        <div class="data-bit">0</div>
+                        <span>0</span>
+                        <span>1</span>
+                        <span>0</span>
                     </div>
                 </div>
             </div>
             <div class="step-label">Disimpan di Data Center</div>
             <div class="step-arrow">➡️</div>
         </div>
-        
+
+        <!-- STEP 4 -->
         <div class="process-step">
             <div class="step-visual">
                 <div class="power-plant">
-                    <div class="factory-smoke">
-                        <div class="smoke-ring"></div>
-                        <div class="smoke-ring"></div>
-                        <div class="smoke-ring"></div>
-                    </div>
+                    <div class="smoke">☁️☁️</div>
                     <div class="power-lines">
-                        <div class="power-line"></div>
-                        <div class="power-line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
                     </div>
                 </div>
             </div>
             <div class="step-label">Butuh Listrik & Pendingin</div>
             <div class="step-arrow">➡️</div>
         </div>
-        
+
+        <!-- STEP 5 -->
         <div class="process-step">
             <div class="step-visual">
                 <div class="carbon-impact">
-                    <div class="co2-cloud">☁️</div>
-                    <div class="earth">🌎</div>
-                    <div class="thermometer">🌡️</div>
-                    <div class="melting-ice">🧊→💧</div>
+                    <span>🌎</span>
+                    <span>🌡️</span>
+                    <span>💨</span>
                 </div>
             </div>
             <div class="step-label">Menghasilkan Emisi Karbon</div>
+            <!-- No arrow for last step -->
         </div>
+
     </div>
-    
-    <div class="animation-controls">
-        <button id="play-animation" class="animation-btn"> Lihat Prosesnya</button>
-        <button id="reset-animation" class="animation-btn">🔄 Ulangi</button>
-    </div>
+
     
     <div class="process-stats">
         <div class="stat-item">
@@ -502,7 +510,7 @@ Ini menunjukkan bahwa aktivitas online yang terlihat “tidak berasap” sebenar
             </div>
             <div class="bar-value">100g CO₂</div>
         </div>
-        <div class="chart-bar" data-value="1600 data-label="Streaming Video (HD)">
+        <div class="chart-bar" data-value="1600" data-label="Streaming Video (HD)">
             <div class="bar-label">Streaming HD</div>
             <div class="bar-wrapper">
                 <div class="bar"></div>
